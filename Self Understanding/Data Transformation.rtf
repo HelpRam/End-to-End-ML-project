@@ -1,0 +1,52 @@
+This video tutorial focuses on implementing data transformation in an end-to-end machine learning project using pipelines and covers topics such as feature engineering, data cleaning, one-hot encoding, and standard scaling. The code demonstrates how to handle categorical and numerical features and save the preprocessor object as a pickle file. The video also discusses the importance of exception handling and provides a step-by-step guide for data transformation.
+
+ In this section, the instructor discusses the importance of data transformation in machine learning projects and mentions that it involves feature engineering and data cleaning.
+- Data transformation is necessary to convert categorical features into numerical features.
+- The instructor will write the code for data transformation in this video.
+
+ The video discusses the libraries and imports needed for data transformation, including one hot encoder and standard scalar.
+- Libraries imported include one hot encoder and standard scalar.
+- Custom exception and loggers are also imported.
+- A data transformation config class is created to provide input paths for the component.
+- A preprocessor object file path is created using OS path.
+    
+ In this section, the speaker discusses creating a pipeline and handling missing values in the numerical features.
+- The speaker mentions the need to transform categorical features into numerical features.
+- They mention the use of an imputer to handle missing values in the numerical features.
+- The strategy used for imputation is set to median.
+    
+[12:36]
+ The video discusses the strategies for data transformation in an ML project using pipelines.
+- The first step is to replace missing values with the mode.
+- One hot encoding is used for categorical variables.
+- Standard scaling is applied to the numerical features.
+- The categorical and numerical pipelines are combined using column Transformer.
+    
+[16:47]
+ The section discusses returning the preprocessor and initiating the data transformation process.
+- The preprocessor is returned after completing the necessary transformations.
+- An exception is raised with a custom exception message.
+- The aim of the function is to perform data transformation based on different types of data.
+- The next function is introduced as "initiate data transformation" and it takes the training and test paths as inputs.
+- The training and test datasets are read using Pandas.
+    
+[20:58]
+ This section discusses dropping a column from the input feature and saving the pre-processing object as a pickle file.
+- The column to be dropped is the target column.
+- The function to save the pre-processing object is called "save_object".
+- The function takes two parameters: file path and the pre-processing object.
+    
+[25:13]
+ The section demonstrates the installation of a library called 'Dil' and the process of saving a pickle file for data transformation.
+- The 'Dil' library is installed using the command 'install -r requirement.txt'.
+- The import statement 'from Source.utils import save_object' is used to import the 'save_object' function.
+- The 'save_object' function is used to save the pickle file in a specific file path.
+- The section concludes by mentioning that the next step is data ingestion.
+    
+[29:25]
+The speaker encounters errors while creating a pickle file and performing data transformation.
+- The pickle file is not getting created.
+- The speaker adds an exception block to see the error.
+- There is a spelling mistake in the data transformation code.
+- The speaker encounters an error while centering a sparse matrix.
+    
